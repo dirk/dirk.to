@@ -9,10 +9,8 @@ a:visited { color: #a0a; }
 */
 
 /* Home */
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
+.posts {list-style-type: none;}
+.posts li {margin-bottom: 2em;}
 
 /*.posts span {
   color: #aaa;
