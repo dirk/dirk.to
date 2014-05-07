@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>dirk.to: {{ page.title }}</title>
+    <!-- primary -->
+    <meta name="viewport" content="width=520" />
+    <link href="/6/css/master.css?2" rel="stylesheet" />
+    <link href="/6/css/blog.css" rel="stylesheet" />
+    <!-- syntax highlighting -->
+    <link rel="stylesheet" href="/6/css/syntax.css">
+    <!-- secondary -->
+    <script type="text/javascript" src="//use.typekit.net/sxd4bax.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="http://esherido.com/mint/?js" type="text/javascript"></script>
+    <!-- syndication -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} (dirk.to)" href="{{ site.url }}/feed.xml">
+  </head>
+  <body>
+    <div id="container" class="blog">
+      <header>
+        <h1><a href="/6/">{{ site.name }}</a> / <a href="/6/blog/" class="blog">Blog</a></h1>
+        {% comment %}<a class="extra" href="/6/">home</a>{% endcomment %}
+      </header>
+
+      {{ content }}
+
+      <div class="footer">
+        &copy; Copyright 2014 Dirk Gadsden. All Rights Reserved.
+      </div>
+    </div>
+
+  </body>
+</html>
