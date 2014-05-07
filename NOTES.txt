@@ -1,0 +1,11 @@
+REVERSE PROXY SETUP
+
+In .htaccess:
+  RewriteRule ^(6/.*)$ http://dirk.github.io/dirk.to/$1 [P]
+
+In vhost:
+  ProxyRequests off
+  ProxyPassReverse /6 http://dirk.github.io/dirk.to/6
+  # Cache for 10 seconds
+  CacheDefaultExpire 10
+  CacheEnable mem /6
