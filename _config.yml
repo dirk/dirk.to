@@ -2,4 +2,4 @@ name: Dirk Gadsden
 url: http://dirk.to/6/blog
 base_url: http://dirk.to
 markdown: redcarpet
-pygments: true
+highlighter: true
