@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hivm: semester of JIT
+title:  "Hivm: semester of JIT"
 date:   2014-12-03 20:00:00
 ---
 
