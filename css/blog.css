@@ -21,6 +21,9 @@ header .rss {
 }
 header .rss:hover {color: #333;}
 
+/*.header a.extra {color: #aaa; margin-left: 1em;}
+.header a.extra:hover {color: #000;}*/
+
 /*
 a         {color: #00a;}
 a:hover   {color: #000;}
@@ -37,10 +40,12 @@ a:visited {color: #a0a;}
   font-size: 80%;
   display: none;
 }*/
-h2,      .posts h3 {font-size: 2.4em; line-height: 1.4; font-weight: 400; letter-spacing: 1px; /*margin: 0 0 0.1em 0;*/}
-h2 a,    .posts h3 a {color: #666; text-decoration: none;}
-h2 span, .posts h3 span {color: #999; font-family: Arial, sans-serif;}
-.meta, .posts .date {color: #999; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;}
+h2,              .posts h3 {font-size: 2.4em; line-height: 1.4; font-weight: 400; letter-spacing: 1px; /*margin: 0 0 0.1em 0;*/}
+h2 a,            .posts h3 a {color: #666; text-decoration: none;}
+h2 a span,       .posts h3 a span {color: #999; font-family: Arial, sans-serif;}
+h2 a:hover,      .posts h3 a:hover,
+h2 a:hover span, .posts h3 a:hover span {color: #333;}
+.meta,           .posts .date {color: #999; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;}
 .meta {margin-bottom: 2em;}
 
 .post {font-size: 1.7em; font-family: Georgia, serif; color: #333; line-height: 1.6;}
