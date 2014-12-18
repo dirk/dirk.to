@@ -1,5 +1,5 @@
 name: Dirk Gadsden
-url: http://dirk.to/blog
-base_url: http://dirk.to
+url: https://dirk.to/blog
+base_url: https://dirk.to
 markdown: redcarpet
 highlighter: true
