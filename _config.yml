@@ -3,3 +3,5 @@ url: https://dirk.to/blog
 base_url: https://dirk.to
 markdown: redcarpet
 highlighter: true
+
+keywords: "Dirk Gadsden, web development, programming, C, Ruby, JavaScript"
