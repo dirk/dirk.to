@@ -41,18 +41,19 @@ a:visited {color: #a0a;}
   display: none;
 }*/
 h2,              .posts h3 {font-size: 2.4em; line-height: 1.4; font-weight: 400; letter-spacing: 1px; /*margin: 0 0 0.1em 0;*/}
-h2 a,            .posts h3 a {color: #666; text-decoration: none;}
+h2 a,            .posts h3 a {color: #333; text-decoration: none;}
 h2 a span,       .posts h3 a span {color: #999; font-family: Arial, sans-serif;}
 h2 a:hover,      .posts h3 a:hover,
-h2 a:hover span, .posts h3 a:hover span {color: #333;}
+h2 a:hover span, .posts h3 a:hover span {color: #8E371C;}
 .meta,           .posts .date {color: #999; font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;}
-.meta {margin-bottom: 2em;}
+.meta {margin-bottom: 3.6em;}
 
-.post {font-size: 1.7em; font-family: Georgia, serif; color: #333; line-height: 1.6;}
+.post {font-size: 2em; font-family: "athelas", Georgia, serif; color: #333; line-height: 1.5;}
 .post p, .post li, .post .highlight {margin-bottom: 1em;}
 .post a {color: #e31f17; text-decoration: none;}
 .post a:hover {color: #8e371c; text-decoration: underline;}
 .post p code {display: inline-block; color: #8e371c;}
+.post h4 {margin: 1.5em 0 0.5em 0;}
 /* Date and other metadata about posts */
 .meta {color: #aaa;}
 
