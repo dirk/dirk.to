@@ -15,7 +15,7 @@ a {text-decoration: none;}
 .sidebar .links {
   padding: 0.1em 0 0 0;
   font-family: "ff-dagny-web-pro"; font-size: 1.3em; font-weight: bold;
-  line-height: 1.85em; text-align: right; letter-spacing: 1px;
+  line-height: 1.867em; text-align: right; letter-spacing: 1px;
 }
 .sidebar .links a {color: #000;}
 .sidebar .links a:hover {text-decoration: underline;}
