@@ -28,6 +28,6 @@ a {text-decoration: none;}
 
 a.picture {
   display: block; width: 100px; height: 100px;
-  background: url('/images/square.png') no-repeat; background-size: cover;
+  background: url('/images/square-300.jpg') no-repeat; background-size: cover;
 }
 a.picture:hover {opacity: 0.75;}
