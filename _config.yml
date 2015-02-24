@@ -1,7 +1,7 @@
 name: Dirk Gadsden
 url: https://dirk.to/blog
 base_url: https://dirk.to
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 extensions: [footnotes]
 
