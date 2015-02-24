@@ -1,8 +1,10 @@
 name: Dirk Gadsden
 url: https://dirk.to/blog
 base_url: https://dirk.to
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
-extensions: [footnotes]
+
+redcarpet:
+  extensions: [footnotes]
 
 keywords: "Dirk Gadsden, web development, programming, C, Ruby, JavaScript"
