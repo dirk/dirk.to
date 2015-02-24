@@ -55,6 +55,7 @@ h2 a:hover span, .posts h3 a:hover span {color: #8E371C;}
 .post p code {display: inline-block; color: #8e371c;}
 .post h4 {margin: 1.5em 0 0.5em 0;}
 .post blockquote {border-left: 1px solid #ddd; padding-left: 1em; color: #666; font-size: 0.9em;}
+.post sup {line-height: 1;}
 /* Date and other metadata about posts */
 .meta {color: #aaa;}
 
