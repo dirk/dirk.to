@@ -54,6 +54,7 @@ h2 a:hover span, .posts h3 a:hover span {color: #8E371C;}
 .post a:hover {color: #8e371c; text-decoration: underline;}
 .post p code {display: inline-block; color: #8e371c;}
 .post h4 {margin: 1.5em 0 0.5em 0;}
+.post blockquote {border-left: 1px solid #ddd; padding-left: 1em; color: #666; font-size: 0.9em;}
 /* Date and other metadata about posts */
 .meta {color: #aaa;}
 
@@ -63,6 +64,13 @@ h2 a:hover span, .posts h3 a:hover span {color: #8E371C;}
   overflow: hidden;
 }
 
+.post .footnotes {margin: 2em 0 0 0; font-size: 0.9em;}
+.post .footnotes hr {
+  border: none; border-top: 1px solid #ddd;
+}
+.post .footnotes ol {padding: 0.75em 0 0 0; color: #666;}
+.post .footnotes li,
+.post .footnotes p:last-child {margin-bottom: 0.5em;}
 
 /* Standard */
 .post pre {
