@@ -7,7 +7,7 @@ a {text-decoration: none;}
 .clearfix:before, .clearfix:after {content: " "; display: table;}
 .clearfix:after {clear: both;}
 
-#container.home {position: absolute; top: 50%; left: 0; right: 0; clear: both; height: 48em; /* margin-top: -170px; */ margin-top: -24em;}
+#container.home {position: absolute; top: 50%; left: 0; right: 0; clear: both; height: 50em; margin-top: -25em;}
 #card {width: 50em; margin: 0 auto; position: relative;}
 
 .sidebar {float: left; width: 12em; margin: 0 3em 0 0;}
