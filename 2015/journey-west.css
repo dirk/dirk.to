@@ -1,0 +1,42 @@
+a {color: #3E8398; text-decoration: none;}
+a:hover {color: #58b6e6; text-decoration: underline;}
+
+.journey-west p {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem; font-family: "freight-text-pro", Georgia, serif;
+  color: #333; line-height: 1.6; letter-spacing: 0.01rem;
+}
+
+.jw-site-header {
+  margin: 0 0 2rem; color: #999; text-transform: uppercase; letter-spacing: 0.1rem;
+}
+
+.jw-container {width: 31.25rem; margin: 0 auto; padding: 2.5rem 0; font-family: 'ff-dagny-web-pro';}
+
+.jw-heading {font-size: 3rem;}
+.jw-subheading {margin: 0.25rem 0 2rem; font-size: 0.75rem; color: #999; font-weight: 400; letter-spacing: 0.1rem;}
+
+p.jw-colophon {margin-bottom: 5rem;}
+
+.jw-day {margin: 0 0 5rem;}
+.jw-day-heading {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem; text-transform: uppercase; color: #666; letter-spacing: 0.1rem; font-weight: 400;
+}
+.jw-day-subheading {margin: 0 0 1rem; font-size: 1.5rem;}
+p.jw-photo {margin: 0 0 0.75rem;}
+.jw-photo a, .jw-photo img {display: block;}
+.jw-photo img {max-width: 100%;}
+.jw-photo a {position: relative;}
+.jw-photo a::after {
+  display: block; content: ' ';
+  position: absolute; left: 0; right: 0; bottom: -3px;
+  height: 1px; background: #ddd;
+  transition: bottom 0.2s, background 0.2s;
+}
+.jw-photo a:hover::after {bottom: -4px; background: #999;}
+
+.jw-footer {
+  color: #999; text-transform: uppercase; letter-spacing: 0.1rem;
+}
+
