@@ -1,7 +1,12 @@
+---
+---
+
+@import 'variables';
+
 * {margin: 0; padding: 0;}
 html, body {height: 100%;}
-html {background: #fff;}
-body {position: relative; min-height: 56em; min-width: 56em; color: #000; font-size: 62.5%;}
+html {background: #fff; font-size: 62.5%;}
+body {position: relative; min-height: 56em; min-width: 56em; color: #000;}
 a {text-decoration: none;}
 
 .clearfix:before, .clearfix:after {content: " "; display: table;}
@@ -11,19 +16,22 @@ a {text-decoration: none;}
 #card {width: 50em; margin: 0 auto; position: relative;}
 
 .sidebar {float: left; width: 12em; margin: 0 3em 0 0;}
-.sidebar a.picture {margin: 0 0 3em 2em;}
+.sidebar a.picture {margin: 0 0 3rem 2rem;}
 .sidebar .links {
   padding: 0.1em 0 0 0;
-  font-family: "ff-dagny-web-pro"; font-size: 1.3em; font-weight: bold;
-  line-height: 1.867em; text-align: right; letter-spacing: 1px;
+  font-family: $font-sans; font-size: 1.3rem; font-weight: bold;
+  line-height: 2.4rem; text-align: right; letter-spacing: 0.1rem;
 }
 .sidebar .links a {color: #000;}
 .sidebar .links a:hover {color: #58b6e6; text-decoration: underline;}
 .sidebar .links small {font-size: 0.7em; color: #666;}
 .main {width: 35em; float: left;}
-.main h1 {font-family: "ff-dagny-web-pro"; font-weight: 700; letter-spacing: 1px; font-size: 2.4em; margin: 76px 0 28px 0; height: 26px;}
-.main p {font-family: "freight-text-pro", Georgia, serif; font-size: 1.7em; line-height: 1.425em; margin-bottom: 1.425em;}
-.main p a {color: #3E8398; text-decoration: none;}
+.main h1 {
+  height: 26px; margin: 76px 0 28px 0;
+  font-family: $font-sans; font-weight: 700; font-size: 2.4rem; letter-spacing: 0.1rem;
+}
+.main p {font-family: $font-serif; font-size: 1.7rem; line-height: 2.4rem; margin-bottom: 2.4rem;}
+.main p a {color: $color-blue; text-decoration: none;}
 .main p a:hover {color: #58b6e6; text-decoration: underline;}
 
 a.picture {
