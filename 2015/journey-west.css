@@ -1,3 +1,5 @@
+body, html {font-size: 100%;}
+
 a {color: #3E8398; text-decoration: none;}
 a:hover {color: #58b6e6; text-decoration: underline;}
 
@@ -11,7 +13,13 @@ a:hover {color: #58b6e6; text-decoration: underline;}
   margin: 0 0 2rem; color: #999; text-transform: uppercase; letter-spacing: 0.1rem;
 }
 
-.jw-container {width: 31.25rem; margin: 0 auto; padding: 2.5rem 0; font-family: 'ff-dagny-web-pro';}
+.jw-container {
+  width: 31.25rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  font-family: 'ff-dagny-web-pro';
+  font-size: 0.75rem;
+}
 
 .jw-heading {font-size: 3rem;}
 .jw-subheading {margin: 0.25rem 0 2rem; font-size: 0.75rem; color: #999; font-weight: 400; letter-spacing: 0.1rem;}
@@ -40,4 +48,3 @@ p.jw-summary {margin: 0 0 1.75rem;}
 .jw-footer {
   color: #999; text-transform: uppercase; letter-spacing: 0.1rem;
 }
-
