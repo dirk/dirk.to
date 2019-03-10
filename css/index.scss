@@ -59,11 +59,10 @@ p {
 }
 
 .root-center {
-  display: flex;
-  width: 100%;
-  height: 100%;
-
   @include breakpoint(desktop) {
+    display: flex;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -78,6 +77,12 @@ p {
       width: $columns-desktop-min-width;
       margin: $columns-desktop-margin;
     }
+
+    @include breakpoint(mobile) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 22px;
+    }
   }
 }
 
@@ -90,6 +95,10 @@ p {
   // Both need a big line and some space at the top.
   border-top: 2px solid $black;
   padding-top: 24px;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 22px;
+  }
 }
 
 .colophon {
@@ -129,6 +138,13 @@ p {
   @include breakpoint(desktop) {
     grid-column: 1;
     grid-row: 2;
+    align-self: end;
+    padding-bottom: 22px;
+  }
+
+  @include breakpoint(mobile) {
+    order: 2;
+    margin-bottom: 44px;
   }
 }
 
@@ -142,7 +158,14 @@ p {
   }
 
   &.left {
-    width: 112px;
+    @include breakpoint(desktop) {
+      width: 112px;
+    }
+
+    @include breakpoint(mobile) {
+      flex-grow: 0.8;
+      margin-right: 22px;
+    }
 
     .link-aside {
       font-size: 12px;
@@ -155,7 +178,14 @@ p {
   }
 
   &.right {
-    width: 168px;
+    @include breakpoint(desktop) {
+      width: 168px;
+    }
+
+    @include breakpoint(mobile) {
+      flex-grow: 1.2;
+      margin-left: 22px;
+    }
   }
 }
 
@@ -182,11 +212,18 @@ p {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 20px;
-  left: calc(50vw - 200px);
-  width: 400px;
   color: $medium-grey;
   font-size: 12px;
   text-align: center;
+
+  @include breakpoint(desktop) {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50vw - 200px);
+    width: 400px;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 22px;
+  }
 }
