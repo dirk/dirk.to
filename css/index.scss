@@ -35,10 +35,10 @@ html {
 
 body {
   position: relative;
-  min-width: $columns-desktop-min-width + (2 * $columns-desktop-margin);
   color: $black;
 
   @include breakpoint(desktop) {
+    min-width: $columns-desktop-min-width + (2 * $columns-desktop-margin);
     min-height: 780px;
   }
 }
@@ -60,63 +60,76 @@ p {
 
 .root-center {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
-}
-
-.columns {
-  display: flex;
-  justify-content: space-between;
-  min-width: $columns-desktop-min-width;
 
   @include breakpoint(desktop) {
-    position: relative;
-    top: -20px;
-    margin: $columns-desktop-margin;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > .center {
+    @include breakpoint(desktop) {
+      position: relative;
+      top: -20px;
+      display: grid;
+      grid-template-columns: 320px 1fr 500px;
+      grid-template-rows: auto auto;
+      width: $columns-desktop-min-width;
+      margin: $columns-desktop-margin;
+    }
   }
 }
 
-.column {
+.section-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.colophon, .work {
   // Both need a big line and some space at the top.
   border-top: 2px solid $black;
   padding-top: 24px;
+}
 
-  .column-heading {
-    font-size: 15px;
+.colophon {
+  @include breakpoint(desktop) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  h1 {
+    width: 180px; // Force text to wrap to two lines.
+    margin-bottom: 40px;
+    font-size: 36px;
     font-weight: 600;
+    line-height: 36px;
   }
 
-  &.left {
-    width: 320px;
+  .link-blog {
+    text-decoration: underline;
+  }
+}
 
-    h1 {
-      width: 180px; // Force text to wrap to two lines.
-      margin-bottom: 40px;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 36px;
-    }
-
-    .link-blog {
-      text-decoration: underline;
-    }
+.work {
+  @include breakpoint(desktop) {
+    grid-column: 3;
+    grid-row: 1 / 3;
   }
 
-  &.right {
-    width: 500px;
-
-    .column-heading {
-      margin-bottom: 28px;
-    }
+  .section-heading {
+    margin-bottom: 28px;
   }
 }
 
 .subcolumns {
   display: flex;
   justify-content: space-between;
-  margin-top: calc(88px + 2px);
+
+  @include breakpoint(desktop) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .subcolumn {
@@ -124,7 +137,7 @@ p {
   padding-top: 20px;
   line-height: 22px;
 
-  .column-heading {
+  .section-heading {
     margin-bottom: 20px;
   }
 
