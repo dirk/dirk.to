@@ -1,0 +1,165 @@
+---
+---
+
+$columns-desktop-min-width: 920px;
+$columns-desktop-margin: 22px;
+
+$black: #000;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 641px) { @content; }
+  } @else if $point == mobile {
+    @media (max-width: 640px) { @content; }
+  } @else {
+    @error "Unknown breakpoint: #{$point}";
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background: #fff;
+  font-family: proxima-nova, 'Avenir Next', 'Avenir', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+}
+
+body {
+  position: relative;
+  min-width: $columns-desktop-min-width + (2 * $columns-desktop-margin);
+  color: $black;
+
+  @include breakpoint(desktop) {
+    min-height: 750px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-bottom: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.root-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  min-width: $columns-desktop-min-width;
+
+  @include breakpoint(desktop) {
+    margin: $columns-desktop-margin;
+  }
+}
+
+.column {
+  // Both need a big line and some space at the top.
+  border-top: 2px solid $black;
+  padding-top: 24px;
+
+  .column-heading {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  &.left {
+    width: 320px;
+
+    h1 {
+      width: 180px; // Force text to wrap to two lines.
+      margin-bottom: 40px;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 36px;
+    }
+
+    .link-blog {
+      text-decoration: underline;
+    }
+  }
+
+  &.right {
+    width: 500px;
+
+    .column-heading {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.subcolumns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(88px + 2px);
+}
+
+.subcolumn {
+  border-top: 2px solid $black;
+  padding-top: 20px;
+  line-height: 22px;
+
+  .column-heading {
+    margin-bottom: 20px;
+  }
+
+  &.left {
+    width: 112px;
+
+    .link-aside {
+      font-size: 12px;
+
+      a {
+        font-size: 11px;
+        line-height: initial;
+      }
+    }
+  }
+
+  &.right {
+    width: 168px;
+  }
+}
+
+.work {
+  li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .dates {
+    order: -1;
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  h3 {
+    margin-bottom: 2px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+}
