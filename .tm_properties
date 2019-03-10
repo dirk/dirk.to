@@ -1,2 +1,0 @@
-excludeInFileChooser  = "{$excludeInFileChooser,_site}"
-excludeInFolderSearch = "{$excludeInFolderSearch,_site}"
