@@ -1,10 +1,4 @@
 name: Dirk Gadsden
-url: https://dirk.to/blog
-base_url: https://dirk.to
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  input: GFM
+url: https://dirk.to
 
 keywords: "Dirk Gadsden, software engineering, web development, programming, C, Ruby, JavaScript"
