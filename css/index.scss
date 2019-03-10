@@ -5,6 +5,7 @@ $columns-desktop-min-width: 920px;
 $columns-desktop-margin: 22px;
 
 $black: #000;
+$medium-grey: #888;
 
 @mixin breakpoint($point) {
   @if $point == desktop {
@@ -38,7 +39,7 @@ body {
   color: $black;
 
   @include breakpoint(desktop) {
-    min-height: 750px;
+    min-height: 780px;
   }
 }
 
@@ -71,6 +72,8 @@ p {
   min-width: $columns-desktop-min-width;
 
   @include breakpoint(desktop) {
+    position: relative;
+    top: -20px;
     margin: $columns-desktop-margin;
   }
 }
@@ -153,7 +156,7 @@ p {
   .dates {
     order: -1;
     margin-bottom: 3px;
-    color: #888;
+    color: $medium-grey;
     font-weight: 400;
     font-size: 12px;
   }
@@ -163,4 +166,14 @@ p {
     font-size: 21px;
     font-weight: 600;
   }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50vw - 200px);
+  width: 400px;
+  color: $medium-grey;
+  font-size: 12px;
+  text-align: center;
 }
